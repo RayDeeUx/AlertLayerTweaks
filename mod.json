@@ -1,0 +1,115 @@
+{
+	"geode": "3.2.0",
+	"gd": {
+		"win": "2.206",
+		"mac": "2.206",
+		"android": "2.206"
+	},
+	"id": "raydeeux.alertlayertweaks",
+	"name": "AlertLayerTweaks",
+	"version": "v1.0.0",
+	"developer": "RayDeeUx",
+	"description": "Modifies FLAlertLayers as you please; mostly to fit more text onto the screen. Useful for mods with long descriptions for their settings.",
+	"repository": "https://github.com/RayDeeUx/AlertLayerTweaks",
+	"settings": {
+		"enabled": {
+			"name": "Enabled",
+			"description": "Toggles the mod.",
+			"type": "bool",
+			"default": true
+		},
+		"modsLayer": {
+			"name": "Only in Geode Mod Index",
+			"description": "Only tweak FLAlertLayers when viewing the Geode mod index, or settings from Geode mods.",
+			"type": "bool",
+			"default": false
+		},
+		"flAlertWidthMultiplier": {
+			"name": "Width Multiplier",
+			"description": "Multiplies the width of <cy>most</c> Alert Layers\n(such as this one you're viewing).\n\nDon't worry, the mod will cap all widths to <cg>420</c> units.\n\n<cy>Enabling the \"Text Scroll\" setting will override whatever value you've set here.</c>",
+			"type": "float",
+			"default": 1.0,
+			"min": 1.0,
+			"max": 1.5,
+			"control": {
+				"input": true,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 0.01
+			}
+		},
+		"textScale": {
+			"name": "Text Scale",
+			"description": "Changes the text scale of <cy>most</c> Alert Layers\n(such as this one you're viewing).\n\n<cy>Enabling the \"Text Scroll\" setting will override whatever value you've set here. Text scales are also ignored in alerts with scrolling enabled.</c>",
+			"type": "float",
+			"default": 1.0,
+			"min": 0.1,
+			"max": 2.0,
+			"control": {
+				"input": true,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 0.01
+			}
+		},
+		"textScroll": {
+			"name": "Text Scroll",
+			"description": "Enable (with 1), ignore (with 0), or disable (with -1) text scrolling in <cy>most</c> Alert Layers\n(such as this one you're viewing).\n\n<cy>Note that enabling text scroll will override your \"Width Multiplier\" and \"Text Scale\" settings.</c>",
+			"type": "int",
+			"default": 0,
+			"min": -1,
+			"max": 1,
+			"control": {
+				"input": false,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 1
+			}
+		},
+		"bouncingTransition": {
+			"name": "Bouncing Transition",
+			"description": "Enable (with 1), ignore (with 0), or disable (with -1) the bouncing transition from opening FLAlertLayers.\n\n<cy>This setting is ignored if you have \"Fast Menu\" from in-game settings enabled.</c>",
+			"type": "int",
+			"default": 0,
+			"min": -1,
+			"max": 1,
+			"control": {
+				"input": false,
+				"slider": true,
+				"arrows": false,
+				"big-arrows": false,
+				"arrow-step": 0,
+				"big-arrow-step": 0,
+				"slider-step": 1
+			}
+		},
+		"logging": {
+			"name": "Enable Logging",
+			"description": "Logs the properties of the FLAlertLayer, in case something goes wrong.",
+			"type": "bool",
+			"default": false
+		}
+	},
+	"resources": {
+		"files": [
+			"resources/*.png"
+		]
+	},
+	"issues": {
+		"url": "https://discord.com/channels/911701438269386882/1205523212444639292",
+		"info": "Ping me <cl>(@erymanthus)</c> in the Geode SDK Discord server's <cl>#help</c> channel if you need help. <cr>DMs are NOT accepted.</c>"
+	},
+	"links": {
+		"community": "https://discord.gg/WqZBYdBWZW",
+		"homepage": "https://discord.com/channels/822510988409831486/1206371881222144020"
+	}
+}

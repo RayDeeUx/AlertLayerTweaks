@@ -20,7 +20,7 @@
 		},
 		"modsLayer": {
 			"name": "Only in Geode Mod Index",
-			"description": "Only tweak FLAlertLayers when viewing the Geode mod index, or settings from Geode mods.",
+			"description": "Only tweak <cy>most</c> Alert Layers when viewing the Geode mod index, or descriptions of settings from Geode mods.",
 			"type": "bool",
 			"default": false
 		},
@@ -77,7 +77,7 @@
 		},
 		"bouncingTransition": {
 			"name": "Bouncing Transition",
-			"description": "Enable (with 1), ignore (with 0), or disable (with -1) the bouncing transition from opening FLAlertLayers.\n\n<cy>This setting is ignored if you have \"Fast Menu\" from in-game settings enabled.</c>",
+			"description": "Enable (with 1), ignore (with 0), or disable (with -1) the bouncing transition when opening <cy>most</c> Alert Layers.\n\n<cy>This setting is ignored if you have \"Fast Menu\" from in-game settings enabled.</c>",
 			"type": "int",
 			"default": 0,
 			"min": -1,
@@ -94,7 +94,7 @@
 		},
 		"logging": {
 			"name": "Enable Logging",
-			"description": "Logs the properties of the FLAlertLayer, in case something goes wrong.",
+			"description": "Logs the properties of <cy>most</c> Alert Layers, in case something goes wrong.",
 			"type": "bool",
 			"default": false
 		}

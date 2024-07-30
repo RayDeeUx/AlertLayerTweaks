@@ -1,5 +1,5 @@
 # AlertLayerTweaks
-Tweak the width, text scale, and scrollability of most `FLAlertLayer`s. (Formerly part of ErysEdits.)
+Tweak the width, text scale, scrollability, and bouncing transitions of most `FLAlertLayer`s. (Formerly part of ErysEdits.)
 
 ![demoOne](https://github.com/RayDeeUx/AlertLayerTweaks/blob/main/resources/demoOne.png)
 

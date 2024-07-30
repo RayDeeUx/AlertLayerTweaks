@@ -27,6 +27,7 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 			log::info("textScale: {}", desiredScale);
 			log::info("bouncing: {}", m_noElasticity);
 			log::info("friendly reminder to check if \"Fast Menu\" is enabled inside your in-game settings too :)");
+			log::info("also, there's a small chance text contents may have changed based on what mods you have installed. consult your mods list to confirm.");
 		}
 		if (Utils::getInt("textScroll") < 1) {
 			if (!desiredScroll) {
@@ -55,6 +56,7 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 			log::info("textScale: {}", desiredScale);
 			log::info("bouncing: {}", m_noElasticity);
 			log::info("friendly reminder to check if \"Fast Menu\" is enabled inside your in-game settings too :)");
+			log::info("also, there's a small chance text contents may have changed based on what mods you have installed. consult your mods list to confirm.");
 		}
 		return FLAlertLayer::init(delegate, title, desc, btn1, btn2, desiredWidth, desiredScroll, desiredHeight, desiredScale);
 	}

@@ -1,13 +1,13 @@
 {
-	"geode": "3.4.0",
+	"geode": "4.0.0-alpha.1",
 	"gd": {
-		"win": "2.206",
-		"mac": "2.206",
-		"android": "2.206"
+		"win": "2.2074",
+		"mac": "2.2074",
+		"android": "2.2074"
 	},
 	"id": "raydeeux.alertlayertweaks",
 	"name": "AlertLayerTweaks",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "RayDeeUx",
 	"description": "Modifies FLAlertLayers as you please; mostly to fit more text onto the screen. Useful for mods with long descriptions for their settings.",
 	"repository": "https://github.com/RayDeeUx/AlertLayerTweaks",

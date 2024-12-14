@@ -32,6 +32,7 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 		if (Utils::getInt("textScroll") < 1) {
 			if (!desiredScroll) {
 				desiredScale = static_cast<float>(Utils::getDouble("textScale"));
+				if (desiredScale > 1.0f) desiredScale = 1.0f;
 			} else { desiredHeight = 300.f; }
 			if (width <= 420.f) {
 				desiredWidth = static_cast<float>(width * Utils::getDouble("flAlertWidthMultiplier"));
@@ -49,7 +50,7 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 			log::info("title: {}", titleString);
 			log::info("desc: {}", descString);
 			if (btn1) { log::info("btn1: {}", btn1); }
-			if (btn2) {  log::info("btn2: {}", btn2);  }
+			if (btn2) { log::info("btn2: {}", btn2); }
 			log::info("width: {}", desiredWidth);
 			log::info("scroll: {}", desiredScroll);
 			log::info("height: {}", desiredHeight);

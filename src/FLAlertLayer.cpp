@@ -19,8 +19,8 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 			log::info("-- [BEFORE ALERTLAYERTWEAKS] --");
 			log::info("title: {}", titleString);
 			log::info("desc: {}", descString);
-			if (btn1) { log::info("btn1: {}", btn1); }
-			if (btn2) { log::info("btn2: {}", btn2); }
+			if (btn1) log::info("btn1: {}", btn1);
+			if (btn2) log::info("btn2: {}", btn2);
 			log::info("width: {}", desiredWidth);
 			log::info("scroll: {}", desiredScroll);
 			log::info("height: {}", desiredHeight);
@@ -33,24 +33,26 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 			if (!desiredScroll) {
 				desiredScale = static_cast<float>(Utils::getDouble("textScale"));
 				if (desiredScale > 1.0f) desiredScale = 1.0f;
-			} else { desiredHeight = 300.f; }
+			} else desiredHeight = 300.f;
 			if (width <= 420.f) {
 				desiredWidth = static_cast<float>(width * Utils::getDouble("flAlertWidthMultiplier"));
-				if (desiredWidth >= 420.f) { desiredWidth = 420.f; }
+				if (desiredWidth >= 420.f) desiredWidth = 420.f;
 			}
 		} else {
 			desiredWidth = 420.f;
+			desiredHeight = 300.f;
 			desiredScroll = (Utils::getInt("textScroll") != -1);
 		}
 		if (Utils::getInt("bouncingTransition") != 0) {
 			m_noElasticity = (Utils::getInt("bouncingTransition") == -1);
 		}
+		if (desiredHeight > 300.f) desiredHeight = 300.f;
 		if (Utils::getBool("logging")) {
 			log::info("-- [AFTER ALERTLAYERTWEAKS] --");
 			log::info("title: {}", titleString);
 			log::info("desc: {}", descString);
-			if (btn1) { log::info("btn1: {}", btn1); }
-			if (btn2) { log::info("btn2: {}", btn2); }
+			if (btn1) log::info("btn1: {}", btn1);
+			if (btn2) log::info("btn2: {}", btn2);
 			log::info("width: {}", desiredWidth);
 			log::info("scroll: {}", desiredScroll);
 			log::info("height: {}", desiredHeight);

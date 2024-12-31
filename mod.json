@@ -7,7 +7,7 @@
 	},
 	"id": "raydeeux.alertlayertweaks",
 	"name": "AlertLayerTweaks",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "RayDeeUx",
 	"description": "Modifies FLAlertLayers as you please; mostly to fit more text onto the screen. Useful for mods with long descriptions for their settings.",
 	"repository": "https://github.com/RayDeeUx/AlertLayerTweaks",
@@ -55,7 +55,7 @@
 				"big-arrows": false,
 				"arrow-step": 0,
 				"big-arrow-step": 0,
-				"slider-step": 0.01
+				"slider-step": 0.1
 			}
 		},
 		"textScroll": {

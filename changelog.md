@@ -1,8 +1,8 @@
 # AlertLayerTweaks Changelog
 ## v1.0.2
-- Change text scale limit to 1.0 because too many people were abusing it to the point that it broke the BetterInfo changelog popup.
-  - Try bypassing it if you want more regrets in your life.
-- Force modified alerts to stay within 300 Cocos units tall.
+- Lower text scale limit to 1.0.
+  - Too many people were abusing it to the point that it broke the BetterInfo changelog popup and Cvolton had to clean up the mess.
+  - Try bypassing it if you want more regrets in your life. I double dare you. ***_>:(_***
 ## v1.0.1
 - Port to 2.2074.
 ## v1.0.0

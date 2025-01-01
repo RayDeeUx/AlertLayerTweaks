@@ -46,7 +46,6 @@ class $modify(MyFLAlertLayer, FLAlertLayer) {
 		if (Utils::getInt("bouncingTransition") != 0) {
 			m_noElasticity = (Utils::getInt("bouncingTransition") == -1);
 		}
-		if (desiredHeight > 300.f) desiredHeight = 300.f;
 		if (Utils::getBool("logging")) {
 			log::info("-- [AFTER ALERTLAYERTWEAKS] --");
 			log::info("title: {}", titleString);
